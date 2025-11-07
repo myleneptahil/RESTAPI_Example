@@ -11,6 +11,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
+@Table(name = "post_comment")  // Add this line
 public class Comment {
 	@jakarta.persistence.Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
